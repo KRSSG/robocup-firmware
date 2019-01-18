@@ -2,12 +2,12 @@
 #include <WiFiUdp.h>
 #define UART_CHECK 255
 /* WiFi network name and password */
-const char * ssid = "NETGEAR93";
-const char * pwd = "giftedmint040";
+const char * ssid = "Xiaomi_D01D";
+const char * pwd = "qwerty123456";
 
 /*IP Address of the Server*/
 /*Don't use broadcast address - It wont work due to high power required*/
-const char * udpAddress = "192.168.1.4";
+const char * udpAddress = "192.168.31.4";
 const int udpPort = 44444;
 
 WiFiUDP udp;
@@ -15,7 +15,7 @@ WiFiUDP udp;
 void setup(){
 
   Serial.begin(115200);
-  pinMode(LED_BUILTIN, OUTPUT): 
+  pinMode(LED_BUILTIN, OUTPUT); 
   WiFi.begin(ssid, pwd);
   while (WiFi.status() != WL_CONNECTED) 
   {
